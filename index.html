@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedra🪨 Papel🗒️ e ✂️Tesoura</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Pedra, Papel e Tesoura</h1>
+
+  <p class="message" data-js="message">
+    Selecione uma opção:
+  </p>
+
+  <div class="view">
+    <div class="container player">
+      <h2>Player</h2>
+      <h3 data-js="player-wins">Vitórias: 0</h3>
+
+      <div class="options">
+        <button title="Pedra" class="option" data-play="rock">
+          <img src="img/rock.png" alt="Pedra" />
+        </button>
+
+        <button title="Papel" class="option" data-play="paper">
+          <img src="img/paper.png" alt="Papel" />
+        </button>
+
+        <button title="Tesoura" class="option" data-play="scissor">
+          <img src="img/scissor.png" alt="Tesoura" />
+        </button>
+      </div>
+    </div>
+
+    <p class="versus">
+      X
+    </p>
+
+    <div class="container bot">
+      <h2>Bot</h2>
+      <h3 data-js="bot-wins">Vitórias: 0</h3>
+
+      <div class="options">
+        <button class="option bot" data-bot-play="rock">
+          <img src="img/rock.png" alt="Pedra" />
+        </button>
+
+        <button class="option bot" data-bot-play="paper">
+          <img src="img/paper.png" alt="Papel" />
+        </button>
+
+        <button class="option bot" data-bot-play="scissor">
+          <img src="img/scissor.png" alt="Tesoura" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
